@@ -1,4 +1,4 @@
-# Build a MPA application
+# Building a MPA application
 
 Look at the code, it's pretty easier.
 
