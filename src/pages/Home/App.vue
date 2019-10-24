@@ -9,12 +9,14 @@
       <div class="short-it">
         <HelloWorld msg="Welcome to Your Vue.js App" />
       </div>
+
       <div />
     </div>
 
     <nav>
       <ul>
         <li>Go to</li>
+
         <li>
           <a
             href="about.html"
@@ -28,12 +30,11 @@
 </template>
 
 <script>
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'Home',
+
   components: {
-    HelloWorld
+    HelloWorld: () => import(/* webpackChunkName: 'hello-world' */ '@/components/HelloWorld.vue')
   }
 }
 </script>
